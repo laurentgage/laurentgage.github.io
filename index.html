@@ -13,6 +13,7 @@
 <body>
   <div class="container g-0 mb-3" id="registration-container">
     <h1>Lauren T. Gage</h1>
+    <h2>Download Start at Nothing</h2>
     <form id="registration-form" class="row g-3">
       <div class="col-auto">
         <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
@@ -52,7 +53,7 @@
       });
 
       if (response.status === 200) {
-        alert("You're subscribed! Please check your email for you download.");
+        alert("You're subscribed! Please check your email for your download.");
       } else {
         throw new Error("Something went wrong.");
       }
