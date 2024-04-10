@@ -31,7 +31,7 @@
     </form>
   </div>
 
-  <div class="modal bd-modal-lg" data-keyboard="false" tabindex="-1">
+  <div id="modal" class="modal bd-modal-lg" data-keyboard="false" tabindex="-1">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="spinner-border" role="status">
@@ -57,7 +57,8 @@
         return;
       }
 
-      $('.modal').modal('show');
+      let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('modal')) // Returns a Bootstrap modal instance
+      modal.show();
 
       document.getElementById("id").value = document.getElementById("email").value
       const data = Object.fromEntries(new FormData(document.getElementById("registration-form")).entries());
@@ -75,7 +76,7 @@
         body: JSON.stringify(data),
       });
 
-      $('.modal').modal('hide');
+      modal.hide();
 
       if (response.status === 200) {
         alert("You're subscribed! Please check your email for your download.");
