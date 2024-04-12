@@ -35,27 +35,30 @@
 
 <body>
   <div class="container g-0 mb-3" id="registration-container">
-    <h1>Lauren T. Gage</h1>
-    <h2>Start at Nothing</h2>
-    <p>Please subscribe and you will receive an email with your free download link to Start at Nothing.</p>
-    <form id="registration-form" class="row g-3">
-      <div class="col-auto">
-        <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Lauren T. Gage</h1>
+        <h2>Start at Nothing</h2>
+        <p>Please subscribe and you will receive an email with your free download link to Start at Nothing.</p>
+        <form id="registration-form" class="row g-3">
+          <div class="col-auto">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+          </div>
+          <div class="col-auto">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Your email">
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary g-recaptcha"
+              data-sitekey="6LfNbFkpAAAAACRDw-PNuGINY7sgAFJAhOM5CWmg" data-callback="onSubmit"
+              data-action="submit">Subscribe</button>
+          </div>
+          <input type="hidden" id="id" name="id">
+          <input type="hidden" id="unique" name="unique" value="email">
+        </form>
       </div>
-      <div class="col-auto">
-        <input type="text" class="form-control" id="email" name="email" placeholder="Your email">
+      <div class="col-sm-6">
+        <img class="img-fluid" src="imgs/start-at-nothing-cover-angled.png" alt="Start at Nothing book" />
       </div>
-      <div class="col-auto">
-        <button type="button" class="btn btn-primary g-recaptcha"
-          data-sitekey="6LfNbFkpAAAAACRDw-PNuGINY7sgAFJAhOM5CWmg" data-callback="onSubmit"
-          data-action="submit">Subscribe</button>
-      </div>
-      <input type="hidden" id="id" name="id">
-      <input type="hidden" id="unique" name="unique" value="email">
-    </form>
-
-    <div class="col-auto">
-      <img class="img-fluid" src="imgs/start-at-nothing-cover-angled.png" alt="Start at Nothing book" />
     </div>
   </div>
 
