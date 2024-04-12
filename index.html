@@ -39,17 +39,23 @@
       <div class="col-auto pt-3">
         <h1>Lauren T. Gage</h1>
         <p>Please subscribe and you will receive an email with your free download link to Start at Nothing.</p>
-        <form id="registration-form" class="row g-3">
-          <div class="col-auto">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+        <form id="registration-form">
+          <div class="row">
+            <div class="col-auto">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
+            </div>
           </div>
-          <div class="col-auto">
-            <input type="text" class="form-control" id="email" name="email" placeholder="Your email">
+          <div class="row">
+            <div class="col-auto">
+              <input type="text" class="form-control" id="email" name="email" placeholder="Your email">
+            </div>
           </div>
-          <div class="col-auto">
-            <button type="button" class="btn btn-primary g-recaptcha"
-              data-sitekey="6LfNbFkpAAAAACRDw-PNuGINY7sgAFJAhOM5CWmg" data-callback="onSubmit"
-              data-action="submit">Subscribe</button>
+          <div class="row">
+            <div class="col-auto">
+              <button type="button" class="btn btn-primary g-recaptcha"
+                data-sitekey="6LfNbFkpAAAAACRDw-PNuGINY7sgAFJAhOM5CWmg" data-callback="onSubmit"
+                data-action="submit">Subscribe</button>
+            </div>
           </div>
           <input type="hidden" id="id" name="id">
           <input type="hidden" id="unique" name="unique" value="email">
