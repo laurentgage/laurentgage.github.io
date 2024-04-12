@@ -21,6 +21,12 @@
       background-color: transparent;
       border: none;
     }
+
+    .img-wrap {
+      position: absolute;
+      -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 90%);
+      clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 90%);
+    }
   </style>
 </head>
 
@@ -44,6 +50,10 @@
       <input type="hidden" id="id" name="id">
       <input type="hidden" id="unique" name="unique" value="email">
     </form>
+
+    <div class="img-wrap">
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNnYg5-u1JRN-mTFJdRLp_2wkx41pBRO8tSuGAiFWWr6BsiB_s" alt="" />
+    </div>
   </div>
 
   <div id="modal" class="modal bd-modal-lg" data-keyboard="false" tabindex="-1">
